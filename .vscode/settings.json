@@ -1,7 +1,21 @@
 {
+  // Prettier & ESLint on save
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.organizeImports": "explicit",
-    "source.sortMembers": "explicit"
-  }
+    "source.fixAll.eslint": true,
+    "source.addMissingImports": true,     // <-- auto-add imports on save
+    "source.organizeImports": true
+  },
+
+  // Make sure TS/JS show auto-import suggestions in the IntelliSense list
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+
+  // Nice-to-have: how imports are written
+  "typescript.preferences.importModuleSpecifier": "shortest",
+  "typescript.preferences.quoteStyle": "single",
+
+  // Use the workspace TypeScript (the one in your node_modules)
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
