@@ -3,10 +3,10 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.addMissingImports": true,     // <-- auto-add imports on save
-    "source.organizeImports": true
-  },
+    "source.fixAll.eslint": "explicit",
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "explicit"
+},
 
   // Make sure TS/JS show auto-import suggestions in the IntelliSense list
   "typescript.suggest.autoImports": true,
